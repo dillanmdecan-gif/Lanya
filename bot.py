@@ -132,7 +132,7 @@ KELLY_MAX_PCT  = _env("KELLY_MAX_PCT",  0.05)
 
 # ── Martingale config ────────────────────────────────────────────────────────
 MARTINGALE_BASE_STAKE = _env("MARTINGALE_BASE_STAKE", 0.35)   # ← $0.35 initial stake
-MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     2.5)    # ← 2.5× multiplier
+MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.65)    # ← 2.5× multiplier
 MARTINGALE_MAX_STEPS  = _env("MARTINGALE_MAX_STEPS",  3)      # ← max 3 steps then reset
 MIN_STAKE             = MARTINGALE_BASE_STAKE                  # absolute floor
 
