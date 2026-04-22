@@ -108,7 +108,7 @@ APP_ID     = _env("DERIV_APP_ID",    1089)
 SYMBOL     = _env("SYMBOL",          "1HZ10V")              # ← changed from 1HZ10V
 
 # Contract
-BARRIER       = 2.5
+BARRIER       = 2.1
 DURATION_MIN  = 2
 DURATION_SEC  = DURATION_MIN * 60                          # 120s
 N_TICKS_EXPIRY = 120                                       # nominal; measured live
