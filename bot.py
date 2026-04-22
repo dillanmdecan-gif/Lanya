@@ -105,10 +105,10 @@ def _env(key, default):
 # Deriv connection
 API_TOKEN  = _env("DERIV_API_TOKEN", "3nMoTkW49VHJqhH")
 APP_ID     = _env("DERIV_APP_ID",    1089)
-SYMBOL     = _env("SYMBOL",          "R_10")              # ← changed from 1HZ10V
+SYMBOL     = _env("SYMBOL",          "1HZ10V")              # ← changed from 1HZ10V
 
 # Contract
-BARRIER       = 0.97
+BARRIER       = 2.5
 DURATION_MIN  = 2
 DURATION_SEC  = DURATION_MIN * 60                          # 120s
 N_TICKS_EXPIRY = 120                                       # nominal; measured live
@@ -132,8 +132,8 @@ KELLY_MAX_PCT  = _env("KELLY_MAX_PCT",  0.05)
 
 # ── Martingale config ────────────────────────────────────────────────────────
 MARTINGALE_BASE_STAKE = _env("MARTINGALE_BASE_STAKE", 0.35)   # ← $0.35 initial stake
-MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.65)    # ← 2.5× multiplier
-MARTINGALE_MAX_STEPS  = _env("MARTINGALE_MAX_STEPS",  3)      # ← max 3 steps then reset
+MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.55)    # ← 2.5× multiplier
+MARTINGALE_MAX_STEPS  = _env("MARTINGALE_MAX_STEPS",  4)      # ← max 3 steps then reset
 MIN_STAKE             = MARTINGALE_BASE_STAKE                  # absolute floor
 
 # Session limits
